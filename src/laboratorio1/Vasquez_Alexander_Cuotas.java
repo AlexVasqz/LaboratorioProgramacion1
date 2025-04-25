@@ -30,12 +30,11 @@ public class Vasquez_Alexander_Cuotas {
         montoMensual= montoMensual + seguroMensual;
         double total= montoMensual * meses;
         
-        System.out.println("**** CUOTAS MENSUALES ****");
-        System.out.println("Cuota de Pago Mensual: HNL."+ montoMensual+"\nTotal a Pagar: HNL."+total);
+        System.out.println("\n**** CUOTAS MENSUALES ****");
+        System.out.printf("Cuota de Pago Mensual: HNL." + String.format("%.2f", montoMensual)+ "\nTotal a Pagar: HNL. " + String.format("%.2f", total));
+
        
-        
-        
-        
+
         
       
     }
