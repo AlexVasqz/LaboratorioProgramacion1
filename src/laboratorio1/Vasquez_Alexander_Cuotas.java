@@ -14,9 +14,30 @@ public class Vasquez_Alexander_Cuotas {
         Scanner scanner = new Scanner(System.in);
         System.out.println("--Ingrese los datos de la Cuota--");
         System.out.println("\nIngrese el Monto del Prestamo: ");
-        double Monto = scanner
+        double monto = scanner.nextDouble();
+        System.out.println("Ingrese el plazo en Meses en que se pagara el Prestamos:");
+        double meses = scanner.nextDouble();
+        System.out.println("Ingrese el % Interes Mensual que se aplicara: ");
+        double interes = scanner.nextDouble();
+        System.out.println("Ingrese la Comision por Cuota del prestamo: ");
+        double comision = scanner.nextDouble();
+        System.out.println("Ingrese el % de Seguro aplicado a la cuota");
+        double seguro = scanner.nextDouble();
+        double interesTotal= (monto * (interes/100) * meses)/meses;
+        double montoMensual= monto/meses;
+        montoMensual= montoMensual + interesTotal+comision;
+        double seguroMensual = montoMensual*(seguro/100);
+        montoMensual= montoMensual + seguroMensual;
+        double total= montoMensual * meses;
+        
+        System.out.println("**** CUOTAS MENSUALES ****");
+        System.out.println("Cuota de Pago Mensual: HNL."+ montoMensual+"\nTotal a Pagar: HNL."+total);
+       
         
         
+        
+        
+      
     }
     
 }
