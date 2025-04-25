@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author alexv
  */
 
-public class CostoPromedioClicks {
+public class Vasquez_Alexander_CostoPromedioClicks {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double precio1 = 0.30;
